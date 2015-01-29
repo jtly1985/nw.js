@@ -70,7 +70,7 @@ class NativeWindow : public web_modal::WebContentsModalDialogHost {
 class NativeWindow {
 #endif
  public:
-  ~NativeWindow() override;
+  ~NativeWindow();
 
   static NativeWindow* Create(const base::WeakPtr<content::Shell>& shell,
                               base::DictionaryValue* manifest);
